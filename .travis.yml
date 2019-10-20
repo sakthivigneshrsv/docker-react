@@ -1,9 +1,8 @@
-language: generic
 sudo: required
 services:
   - docker
 
-befor_install:
+before_install:
   - docker ps -a
   - docker build -t vignesh/docker-react -f Dockerfile.dev .
 
