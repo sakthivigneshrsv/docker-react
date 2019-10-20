@@ -4,5 +4,6 @@ services:
 
 befor_install:
   - docker build -t vignesh/docker-react -f Dockerfile.dev .
+
 script:
   - docker run -e CI=true vignesh/docker-react npm run test
