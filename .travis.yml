@@ -4,6 +4,7 @@ services:
   - docker
 
 before_install:
+  - gem update --system
   - docker ps -a
   - docker build -t vignesh/docker-react -f Dockerfile.dev .
 
